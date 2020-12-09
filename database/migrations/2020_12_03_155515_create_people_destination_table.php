@@ -14,8 +14,8 @@ class CreatePeopleDestinationTable extends Migration
     public function up()
     {
         Schema::create('people_destination', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->foreignId('people_id')->constrained('people');
+            $table->foreignId('destination_id')->constrained('destination');
         });
     }
 

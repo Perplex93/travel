@@ -14,8 +14,7 @@ class CreateDestinationDescriptionTable extends Migration
     public function up()
     {
         Schema::create('destination_description', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->foreignId('destination_id')->constrained('destination');
         });
     }
 

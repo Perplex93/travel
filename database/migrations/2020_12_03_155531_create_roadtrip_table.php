@@ -15,7 +15,10 @@ class CreateRoadtripTable extends Migration
     {
         Schema::create('roadtrip', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->integer('order');
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
+            $table->foreignId('spot_id')->constrained('spot');
         });
     }
 

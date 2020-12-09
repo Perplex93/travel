@@ -15,7 +15,11 @@ class CreateDestinationTable extends Migration
     {
         Schema::create('destination', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->tinyInteger('future');
+            $table->string('title', 500)->nullable();
+            $table->longText('description', 1500)->nullable();
+            $table->timestamp('created_at');
+            $table->timestamp('updated_at');
         });
     }
 

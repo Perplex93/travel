@@ -15,7 +15,11 @@ class CreateRecipeTable extends Migration
     {
         Schema::create('recipe', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->longText('description', 500)->nullable();
+            $table->string('imagepath', 250)->nullable();
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
+            $table->foreignId('spot_id')->constrained('spot');
         });
     }
 

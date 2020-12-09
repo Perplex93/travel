@@ -15,7 +15,7 @@ class CreateCategoryDestinationTable extends Migration
     {
         Schema::create('category_destination', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->foreignId('destination_id')->constrained('destination');
         });
     }
 

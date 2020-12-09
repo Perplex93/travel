@@ -15,7 +15,13 @@ class CreateSpotTable extends Migration
     {
         Schema::create('spot', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('latitude', 45);
+            $table->string('longitude', 45);
+            $table->longText('title', 500)->nullable();
+            $table->longText('description', 1500)->nullable();
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
+            $table->foreignId('destination_id')->constrained('destination');
         });
     }
 
