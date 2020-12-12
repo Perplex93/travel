@@ -17,3 +17,50 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('contact', function() {
+    return view('contact');
+});
+
+Route::get('category', function() {
+    return view('category.category');
+});
+
+Route::get('category_destination', function() {
+    return view('category.destination');
+});
+
+Route::get('/destination', 'App\Http\Controllers\DestinationController@index');
+
+Route::get('/destination/{id}', 'App\Http\Controllers\DestinationController@show');
+
+Route::get('destination_description', function() {
+    return view('destination.description');
+});
+
+Route::get('media', function() {
+    return view('media.media');
+});
+
+Route::get('people', function() {
+    return view('people.people');
+});
+
+Route::get('people_destination', function() {
+    return view('people.destination');
+});
+
+Route::get('people_spot', function() {
+    return view('people.spot');
+});
+
+Route::get('recipe', function() {
+    return view('recipe.recipe');
+});
+
+Route::get('spot', function() {
+    return view('spot.spot');
+});
+
+Route::get('spot_description', function() {
+    return view('spot.description');
+});
