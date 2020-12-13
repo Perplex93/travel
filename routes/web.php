@@ -37,6 +37,8 @@ Route::get('destination_description', function() {
     return view('destination.description');
 });
 
+Route::get('destination_create','App\Http\Controllers\DestinationController@create');
+
 Route::get('media', function() {
     return view('media.media');
 });
@@ -64,3 +66,8 @@ Route::get('spot', function() {
 Route::get('spot_description', function() {
     return view('spot.description');
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('permissions', 'App\Http\Controllers\PermissionController')->middleware('permissions:administrator');

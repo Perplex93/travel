@@ -18,4 +18,8 @@ class DestinationController extends Controller
 
         return view('destination.description', compact('destinationID'));
     }
+
+    public function create(){
+        return view('destination.create');
+    }
 }
