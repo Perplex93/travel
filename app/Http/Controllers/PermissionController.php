@@ -42,6 +42,10 @@ class PermissionController extends Controller
             'description' => 'required|max:255',
 
         ]);
+
+        Permission::create($validatedData);
+
+        return redirect('/permissions')->with('success','Permission erfolgreich hinzugefügt!');
     }
 
     /**

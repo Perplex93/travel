@@ -24,6 +24,21 @@
         user-select: none;
       }
 
+      section#headerSection{
+      height: 500px;
+      }
+
+      div#headerImg{
+      background-image: url('../img/photo-1503220317375-aaad61436b1b.jpg'); 
+      background-repeat:no-repeat; 
+      background-size:100% 100%;
+      }
+
+      div#searchbar{
+      background-color:rgba(255, 255, 255, 0);
+      }
+
+     
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -36,58 +51,31 @@
 
     @include('nav')
 
-    <section>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner" style="height:500px">
-    <div class="carousel-item active">
-      <img src="\img\photo-1488646953014-85cb44e25828.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="\img\photo-1502920514313-52581002a659.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="\img\photo-1503220317375-aaad61436b1b.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </a>
-</div>
-
-<div class="row">
-          <div class="col-xl-10">
-            <div class="text-center text-lg-left">
-              <p>Beste Reise Erfahrung</p>
-              <h1 class="display-3 font-weight-bold text-shadow">Reisen mit Spaß</h1>
+    <section id="headerSection">
+      <div class="h-100 d-flex justify-content-center" id="headerImg">
+          <div class="col-xl-10 ">
+            <div class="text-center">
+              <p class="pt-5">Beste Reise Erfahrung</p>
+              <h1 class="display-3 font-weight-bold text-shadow pt-5">Reisen mit Spaß</h1>
             </div>
-            <div class="nav-bar navbar-light bg-light">
-              <form action="container-fluid">
-                <div class="input-group ">
-                    <input class="form-control border-0 shadow-0" type="text" name="search" placeholder="Was suchst du ? ">
-                    <input class="form-control border-0 shadow-0" type="text" name="location" placeholder="Ort" id="location">
-                    
+            <div class="nav-bar navbar-light pt-5" id="searchbar">
+              <form action="container-fluid" class="w-100">
+                <div class="input-group">
+                    <input class="form-control border-0 shadow-0 rounded-pill mr-3" type="text" name="search" placeholder="Was suchst du ? ">
+                    <input class="form-control border-0 shadow-0 rounded-pill mr-3" type="text" name="location" placeholder="Ort" id="location">
                     <div class="dropdown">
-                    <select class="selectpicker" title="Categories" data-style="btn-form-control"><option class="bs-title-option" value="">Kategorie</option>
+                    <select class="selectpicker rounded-pill mr-3" title="Categories" data-style="btn-form-control"><option class="bs-title-option" value="">Kategorie</option>
                       <option value="small">Hotels</option>
                       <option value="medium">Restaurants</option>
                       <option value="large">Sehenswürdigkeiten</option>
                       <option value="x-large">Personen</option>
                     </select>
                     </div>
+                    <div class="col-lg-2">
+                    <button class="btn btn-primary btn-block rounded-pill h-100" type="submit">Suchen </button>
+                    </div>
                 </div>
-                  <div class="col-lg-2">
-                    <button class="btn btn-primary btn-block rounded-xl h-100" type="submit">Suchen </button>
-                  </div>
+                  
                 </div>
               </form>
             </div>
