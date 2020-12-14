@@ -9,7 +9,8 @@
     <a class="p-2 text-dark" href="/people">Personen</a>
     <a class="p-2 text-dark" href="/shops">Shops</a>
     <a class="p-2 text-dark" href="/recipe">Rezepte</a>
-    <a class="p-2 text-dark" href="/destination/create">Reiseziel hinzufügen</a>
     <a class="p-2 text-dark" href="/contact">Kontakt</a>
+    <a class="p-2 text-dark" href="/login">Login</a>
+    <a class="p-2 text-dark" href="/register">Registrieren</a>
   </nav>
 </div>
