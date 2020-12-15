@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>@yield('title')</title>
+        @section('title', 'Home')
 
 
         <script src="{{asset('js/app.js')}}" defer></script>
@@ -48,9 +48,8 @@
 
     </head>
     <body>
-
-    @include('nav')
-
+@extends('layouts.app')
+@section('content')
     <section id="headerSection">
       <div class="h-100 d-flex justify-content-center " id="headerImg">
           <div class="col-xl-10 mt-auto mb-auto">
@@ -63,10 +62,10 @@
                     <input class="form-control border-0 shadow-0 rounded-pill mr-3" type="text" name="search" placeholder="Was suchst du ? ">
                     <input class="form-control border-0 shadow-0 rounded-pill mr-3" type="text" name="location" placeholder="Ort" id="location">
                     <div class="dropdown">
-                    <select class="selectpicker rounded-pill mr-3 h-100" title="Categories" data-style="btn-form-control"><option class="bs-title-option" value="">Kategorie</option>
-                      <option value="small">Hotels</option>
-                      <option value="medium">Restaurants</option>
-                      <option value="large">Sehenswürdigkeiten</option>
+                    <select class="selectpicker rounded-pill mr-3 h-100 w-100" title="Categories" data-style="btn-form-control"><option class="bs-title-option" value="">Kategorie</option>
+                      <option value="small">Unterkunft</option>
+                      <option value="medium">Arbeit</option>
+                      <option value="large">Lernen</option>
                       <option value="x-large">Personen</option>
                     </select>
                     </div>
@@ -92,7 +91,7 @@
           <p>Gestallte dir einen Reisetrip ganz nach deinem Geschmack.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 ">
           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
           <h2>Lerne neue Leute kennen</h2>
@@ -151,25 +150,7 @@
 
 <hr class="featurette-divider">
     </section>
-    
-    <div class="container">
-        @yield('content')
-    </div>
+@endsection
 
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
-        <div class="col-12 col-md">
-            <h5>Features</h5>
-            <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="#">Cool stuff</a></li>
-            <li><a class="link-secondary" href="#">Random feature</a></li>
-            <li><a class="link-secondary" href="#">Team feature</a></li>
-            <li><a class="link-secondary" href="#">Stuff for developers</a></li>
-            <li><a class="link-secondary" href="#">Another one</a></li>
-            <li><a class="link-secondary" href="#">Last time</a></li>
-            </ul>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
 </html>
