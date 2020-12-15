@@ -67,7 +67,9 @@ class PermissionController extends Controller
      */
     public function edit($id)
     {
-        //
+        $permission = Permission::findOrFail($id);
+
+        return view('permissions.edit', compact('permission'));
     }
 
     /**
@@ -79,7 +81,15 @@ class PermissionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'slug' => 'required|max:255',
+            'description' => 'required|max:255',
+        ]);
+
+        Permission::whereId($id)->update($validatedData);
+
+        return redirect('permissions')->with('success', 'Permission erfolgreich editiert!');
     }
 
     /**
@@ -90,6 +100,10 @@ class PermissionController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $permission = Permission::findOrFail($id);
+
+        $permission->delete();
+
+        return redirect('permissions')->with('success', 'Permission erfolgreich gelöscht!');
     }
 }

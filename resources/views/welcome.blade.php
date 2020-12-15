@@ -52,19 +52,18 @@
     @include('nav')
 
     <section id="headerSection">
-      <div class="h-100 d-flex justify-content-center" id="headerImg">
-          <div class="col-xl-10 ">
+      <div class="h-100 d-flex justify-content-center " id="headerImg">
+          <div class="col-xl-10 mt-auto mb-auto">
             <div class="text-center">
-              <p class="pt-5">Beste Reise Erfahrung</p>
-              <h1 class="display-3 font-weight-bold text-shadow pt-5">Reisen mit Spaß</h1>
+              <h1 class="display-3 font-weight-bold text-shadow">Erlebe die Welt</h1>
             </div>
-            <div class="nav-bar navbar-light pt-5" id="searchbar">
-              <form action="container-fluid" class="w-100">
+            <div class="nav-bar navbar-light pt-5 d-flex justify-content-center" id="searchbar">
+              <form action="container-fluid" class="w-75">
                 <div class="input-group">
                     <input class="form-control border-0 shadow-0 rounded-pill mr-3" type="text" name="search" placeholder="Was suchst du ? ">
                     <input class="form-control border-0 shadow-0 rounded-pill mr-3" type="text" name="location" placeholder="Ort" id="location">
                     <div class="dropdown">
-                    <select class="selectpicker rounded-pill mr-3" title="Categories" data-style="btn-form-control"><option class="bs-title-option" value="">Kategorie</option>
+                    <select class="selectpicker rounded-pill mr-3 h-100" title="Categories" data-style="btn-form-control"><option class="bs-title-option" value="">Kategorie</option>
                       <option value="small">Hotels</option>
                       <option value="medium">Restaurants</option>
                       <option value="large">Sehenswürdigkeiten</option>
@@ -72,7 +71,7 @@
                     </select>
                     </div>
                     <div class="col-lg-2">
-                    <button class="btn btn-primary btn-block rounded-pill h-100" type="submit">Suchen </button>
+                    <button class="btn btn-success rounded-pill w-100" type="submit">Suchen </button>
                     </div>
                 </div>
                   
@@ -84,7 +83,7 @@
     </section>
 
     <section>
-    <div class="container">
+    <div class="container mt-5">
       <div class="row">
         <div class="col-lg-4">
           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>

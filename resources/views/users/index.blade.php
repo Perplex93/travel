@@ -15,29 +15,35 @@
             </div>
         @endif
         <div class="row align-items-center justify-content-start">
-            <h1 class="text-left col">Permissions</h1><a  href="{{route('permissions.create')}}" class="btn btn-primary">Hinzufügen</a>
+            <h1 class="text-left col">Users</h1><a  href="{{route('users.create')}}" class="btn btn-primary">Hinzufügen</a>
         </div>
         <table class="table table-stripped">
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
-                    <th>Slug</th>
-                    <th>Description</th>
+                    <th>E-Mail</th>
+                    <th>Permissions</th>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach($permissions as $permission)
+                @foreach($users as $user)
                     <tr>
-                        <th scope="row">{{$permission->id}}</th>
-                        <td>{{$permission->name}}</td>
-                        <td>{{$permission->slug}}</td>
-                        <td>{{$permission->description}}</td>
+                        <th scope="row">{{$user->id}}</th>
+                        <td>{{$user->name}}</td>
+                        <td>{{$user->email}}</td>
+                        <td>
+                            <ul>
+                                @foreach($user->permissions()->get() as $permission)
+                                    <li>{{$permission->name}}</li>
+                                @endforeach
+                            </ul>
+                        </td>
                         <td class="row justify-content-center">
-                            <a href="{{route('permissions.edit', $permission->id)}}" class="btn btn-primary">EDIT</a>
+                            <a href="{{route('users.edit', $user->id)}}" class="btn btn-primary">EDIT</a>
 
-                            <form action="{{route('permissions.destroy', $permission->id)}}" method="post">
+                            <form action="{{route('users.destroy', $user->id)}}" method="post">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn btn-danger ml-3" type="submit" onclick="return confirm('Wollen Sie es wirklich löschen ?')" style="-webkit-appearance:none;">DELETE</button>
