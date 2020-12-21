@@ -28,14 +28,20 @@
       height: 500px;
       }
 
-      div#headerImg{
-      background-image: url('../img/photo-1503220317375-aaad61436b1b.jpg'); 
-      background-repeat:no-repeat; 
-      background-size:100% 100%;
-      }
+      div#headerImg {
+        background-image: url('https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+        background-position: 25% 80%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
       div#searchbar{
       background-color:rgba(255, 255, 255, 0);
+      }
+
+      #searchButton{
+        background-color: burlywood;
       }
 
      
@@ -44,6 +50,7 @@
           font-size: 3.5rem;
         }
       }
+
     </style>
 
     </head>
@@ -62,7 +69,7 @@
                     <input class="form-control border-0 shadow-0 rounded-pill mr-3" type="text" name="search" placeholder="Was suchst du ? ">
                     <input class="form-control border-0 shadow-0 rounded-pill mr-3" type="text" name="location" placeholder="Ort" id="location">
                     <div class="dropdown">
-                    <select class="selectpicker rounded-pill mr-3 h-100 w-100" title="Categories" data-style="btn-form-control"><option class="bs-title-option" value="">Kategorie</option>
+                    <select class="selectpicker rounded-pill mr-3 h-100 w-100 pl-1" title="Categories" data-style="btn-form-control"><option class="bs-title-option" value="">Kategorie</option>
                       <option value="small">Unterkunft</option>
                       <option value="medium">Arbeit</option>
                       <option value="large">Lernen</option>
@@ -70,7 +77,7 @@
                     </select>
                     </div>
                     <div class="col-lg-2">
-                    <button class="btn btn-success rounded-pill w-100" type="submit">Suchen </button>
+                    <button class="btn rounded-pill w-100" id="searchButton" type="submit">Suchen </button>
                     </div>
                 </div>
                   

@@ -73,3 +73,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('permissions', 'App\Http\Controllers\PermissionController')->middleware('permissions:administrator');
 
 Route::resource('users', 'App\Http\Controllers\UserController')->middleware('permissions:administrator');
+
+Route::resource('people', 'App\Http\Controllers\PeopleController');
+
+
+Route::resource('maps', 'App\Http\Controllers\MapsController');
