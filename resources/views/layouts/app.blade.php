@@ -15,6 +15,8 @@
     
     <title>@yield('title')</title>
 
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
     <script src="{{ asset('js/app.js') }}" defer></script>
 
 
@@ -30,6 +32,10 @@
 
         footer{
             background-color: burlywood;
+        }
+
+        footer a{
+            color: black;
         }
     </style>
 </head>
@@ -112,7 +118,7 @@
             @yield('content')
         </main>
     </div>
-
+    <div class="elfsight-app-d22f6bdb-b695-4acd-b075-a04ee65fe300"></div>
     <footer>
         <hr>
         <div class="container">

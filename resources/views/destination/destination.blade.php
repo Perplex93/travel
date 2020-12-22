@@ -18,8 +18,14 @@
         background-color: rgba(255, 255, 255, 0.5);
     }
 
-    h3{
+    h3 {
         background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    #destinationImage {
+        max-width: 8rem;
+        border-radius: 40%;
+        border-style: groove;
     }
 
     #map {
@@ -27,23 +33,52 @@
     }
 </style>
 
+
 <section id="headerSection">
     <div class="h-100 d-flex justify-content-center " id="headerImg">
         <div class="col-xl-10 mt-auto mb-auto text-center">
-        <h1 class="display-3 font-weight-bold text-shadow">Reiseziele</h1>
-        <h3 class="font-weight-bold text-shadow">Trage dein Traumreiseziel auf der Landarte ein und beginne gleich mit deiner Planung </h3>
-        <a href="/register" class="btn btn-success">Registrieren</a>
+            <h1 class="display-3 font-weight-bold text-shadow">Reiseziele</h1>
+            <h3 class="font-weight-bold text-shadow">Trage dein Traumreiseziel auf der Landarte ein und beginne gleich mit deiner Planung </h3>
+            <a href="/register" class="btn btn-success">Registrieren</a>
         </div>
     </div>
 </section>
 
-<div class="row">
-<div id="destinations" class="col-5 m-5">
-    <h5>Destination-Name</h5>
-    <p>Destination Description</p>
+<div class="row m-auto justify-content-center">
+
+    <div class='col-sm-8 pt-5 m-auto pt-3 pb-3 bg-white'>
+        @foreach($data as $destination)
+        <div class="row mb-3">
+            <div class="col-3 ml-3 mt-3">
+                <img class="" id="destinationImage" src=" {{('/img/' . $destination->destination_image)}}" alt="">
+            </div>
+            <div class="col-7">
+                <a href="#" target="_blank"> <strong> {{$destination->title}}</strong> </a>
+                <br>
+                <ul>
+                    <li>
+                        {{$destination->description}}
+                    </li>
+                </ul>
+
+                <div class="btn-margin">
+                    <a href="#" target="_blank" class="btn btn-xs btn-success hidden-xs">Reiseziel ansehen </a>
+                    <a href="#" target="_blank" data-contact="" class="btn btn-xs btn-info">Gastgeber suchen </a>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        @endforeach
+    </div>
 </div>
 
-<div id='map' class="mt-5 col-5"></div>
+<div class="row justify-content-center pb-5 m-auto">
+    <div id='fullMap' class="mt-5 m-auto col-8 text-center">
+            <h2 class="mt-5 pb-5">Sehen Sie sich die Route an</h2>
+            <div id='map'></div>
+    </div>
+
 
 </div>
 

@@ -18,6 +18,7 @@ class CreateDestinationTable extends Migration
             $table->tinyInteger('future');
             $table->string('title', 500)->nullable();
             $table->longText('description', 1500)->nullable();
+            $table->string('destination_image', 255);
             $table->timestamp('created_at');
             $table->timestamp('updated_at');
         });

@@ -16,7 +16,7 @@ class DestinationController extends Controller
     public function show($id){
         $destinationID = $id;
 
-        return view('destination.description', compact('destinationID'));
+        return view('destination.create', compact('destinationID'));
     }
 
     public function create(){

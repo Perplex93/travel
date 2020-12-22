@@ -92,40 +92,38 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-          <h2>Finde die Perfekte Reise</h2>
+          <img src="/img/photo-1488646953014-85cb44e25828.jpg" alt="" class="rounded-circle w-75 h-50">
+          <h2 class="pt-3">Finde die Perfekte Reise</h2>
           <p>Gestallte dir einen Reisetrip ganz nach deinem Geschmack.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-success" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-lg-4 ">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-          <h2>Lerne neue Leute kennen</h2>
+          <img src="/img/photo-1503220317375-aaad61436b1b.jpg" alt="" class="rounded-circle w-75 h-50">
+          <h2 class="pt-2">Lerne neue Leute kennen</h2>
           <p>Verlinke dich mit Freunden oder Leuten die du gerne kennenlernen möchtest und teile mit wen du kennen gelernt hast.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-success" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-          <h2>Geniesse deinen Trip</h2>
+          <img src="/img/kroatien.jpg" alt="" class="rounded-circle w-75 h-50">
+          <h2 class="pt-4">Geniesse deinen Trip</h2>
           <p>Mit der unkomplizierten suche findest du mit ein paar klicks alles was du für deinen Trip brauchst.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-success" href="#" role="button">View details &raquo;</a></p>
         </div>
     </div>
 
 <hr class="featurette-divider">
 
-<h1>Neueste Einträge unseres Blogs</h1>
+<h1 class="text-center pt-5 pb-5">Neueste Einträge unseres Blogs</h1>
 
 <div class="row featurette">
   <div class="col-md-7">
-    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <h2 class="featurette-heading">Solo, Single und fast 30: Reisende, ist es nicht an der Zeit, sich niederzulassen?</h2>
+    <span class="text-muted">Inspiration</span>
+    <p></p>
+    <p class="lead">Single? Allein reisen? Über 30 zu treffen? WIR AUCH! Und was für ein wunderbares Gefühl das ist, aber warum um alles in der Welt werden uns diese Fragen ständig gestellt?</p>
   </div>
   <div class="col-md-5">
-    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+    <img src="/img/photo-1485178575877-1a13bf489dfe.jpg" alt="" class="w-75 h-75">
   </div>
 </div>
 
@@ -133,11 +131,13 @@
 
 <div class="row featurette">
   <div class="col-md-7 order-md-2">
-    <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <h2 class="featurette-heading">12 Erstaunliche Reiseerlebnisse auf der ganzen Welt.</h2>
+    <span class="text-muted">Reise verwenden, Inspiration</span>
+    <p></p>
+    <p class="lead">Wir leben nur einmal, also wählen wir die bedeutungsvollsten Dinge an den phänomenalsten Orten der Welt!</p>
   </div>
   <div class="col-md-5 order-md-1">
-    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+    <img src="/img/simeon-tuilagi-MIbMFXBWpFs-unsplash.jpg" alt="" class="w-75 h-75">
 
   </div>
 </div>
@@ -146,12 +146,13 @@
 
 <div class="row featurette">
   <div class="col-md-7">
-    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <h2 class="featurette-heading">Auf zwei Rädern um die Welt - Reisetipps für den Radsportnomaden</h2>
+    <span class="text-muted">Reisetipps</span>
+    <p></p>
+    <p class="lead">Ah, es gibt kein so befreiendes und aufregendes Gefühl, als einen neuen Platz auf Ihrem alten Fahrrad zu entdecken.</p>
   </div>
   <div class="col-md-5">
-    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+    <img src="/img/murillo-de-paula-o2FCfhNSjPo-unsplash.jpg" alt="" class="w-75 h-75">
   </div>
 </div>
 

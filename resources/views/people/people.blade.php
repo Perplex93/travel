@@ -44,7 +44,7 @@
 </section>
 
 <div class="text-center pt-3 pb-3" id="descriptionText">
-    <h5>Reise nicht alleine Such die einen Travel Buddie</h5>
+    <h5>Reise nicht alleine Such dir einen Travel Buddie</h5>
     <p>Viele Reise-Mitglieder suchen nach einem Reisepartner.
         Und täglich kommen neue Travel-Mates hinzu.
         Immer wieder eine neue Chance, den perfekten Reisepartner für dich zu finden.
@@ -56,8 +56,9 @@
 
     </p>
 </div>
-<div class="row">
-    <div class="col-md-4 col-sm-5 mt-5 pt-3 pb-3 ml-3 bg-white">
+<div class="row m-auto">
+    <div class="col-md-5 col-sm-5 mt-5 ml-5 pt-3 pb-3 ml-3 bg-white h-75">
+        <h2>Suche deinen perfekten Reisepartner</h2>
         <form id="tbform" method="post" enctype="multipart/form-data">
             <div class="clear15"></div>
             <div class="formgroup dropdown-custom">
@@ -294,7 +295,7 @@
         </div>
     </div>
 
-    <div class='col-md-7 col-sm-5 mt-5 pt-3 pb-3 ml-3 bg-white'>
+    <div class='col-md-6 col-sm-5 mt-5 pt-3 pb-3 ml-5 bg-white'>
         <h1>Passende Personen</h1>
         @foreach($people as $people)
         <div class="row mb-3">
